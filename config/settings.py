@@ -13,7 +13,7 @@ SECRET_KEY = 'en*6e=gr^08)1-(g14*vf(gut7$9s)d4g76rk9mf$f$i-0)44*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
