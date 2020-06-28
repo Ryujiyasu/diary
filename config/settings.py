@@ -13,7 +13,7 @@ SECRET_KEY = 'en*6e=gr^08)1-(g14*vf(gut7$9s)d4g76rk9mf$f$i-0)44*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -124,7 +124,13 @@ MEDIA_ROOT = '/var/www/html/media'
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'tatamiten3939'
+EMAIL_HOST_PASSWORD = 'tatamiten3939'
+EMAIL_USE_TLS = True
+
 
 AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',  # 一般ユーザー用(メールアドレス認証)
