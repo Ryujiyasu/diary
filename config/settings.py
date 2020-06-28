@@ -116,13 +116,9 @@ LOGIN_REDIRECT_URL = 'diary:diary_list'
 ACCOUNT_LOGOUT_REDIRECT_URL = 'account_login'
 
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-
+STATIC_ROOT = '/var/www/html/static'
 MEDIA_URL = '/media/'
-MEDIA_ROOT=BASE_DIR+"/media/"
+MEDIA_ROOT = '/var/www/html/media'
 
 
 
